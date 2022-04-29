@@ -15,7 +15,14 @@ inputTexto.value = "";
 
 // Requisito 7
 function corDeFundo(event){
-event.target.classList.add("item-selecionado");
+const itemLista = document.getElementsByTagName("li");
+for (let index = 0; index < itemLista.length; index += 1)
+{itemLista[index].classList.remove("item-selecionado")}
+event.target.classList.add("item-selecionado")
 }
+
+
+
+
 
 
