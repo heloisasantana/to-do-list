@@ -2,4 +2,6 @@
     background-color: grey;
 }
  
-
+.completed {
+    text-decoration: line-through;
+}
