@@ -71,7 +71,7 @@ button {
 }
 
 .item-selecionado {
-  background-color: rgba(170, 167, 166, 0.422);
+  background-color: rgba(170 167 166 0.422);
   padding: 0;
   width: 100%;
   margin: auto;
