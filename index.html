@@ -1,22 +1,37 @@
  <!DOCTYPE html>
  <html lang="pt-br">
     <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heloísa Santana - Projeto To Do List</title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <header><h1>Minha Lista de Tarefas</h1></header>
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-    <input type="text" id="texto-tarefa">
-    <ol id="lista-tarefas">
-      
-    </ol>    
-     
-    <button type="button" id="criar-tarefa">Adicionar Tarefa</button>
-  
- <script src="script.js"></script>    
- </body>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lista de Tarefas</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/bulma-rtl.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Acme&family=Arimo&family=Caveat+Brush&family=Hina+Mincho&family=Hind+Siliguri:wght@300&family=Indie+Flower&family=Koulen&family=Lobster&family=Patrick+Hand&display=swap" rel="stylesheet">
+   </head>
+   <body>
+   <p class="personalize">Personalize sua lista</p>
+   <div class="head">
+      <form class="add">
+         <textarea id="texto-tarefa" min="100" maxlength="200px"></textarea>
+      <!-- <input type="text" id="texto-tarefa" > -->
+         <div class="buttons">
+            <button class="button is-primary is-rounded" type="button" id="criar-tarefa">Adicionar Tarefa</button>
+            <button class="button is-danger is-rounded" type="reset" id="apaga-tudo">Apagar Tudo</button>
+         </div>
+      </form>
+   </div>
+   <div>
+      <p class="funcionamento">Dica: Clique duas vezes em um item para marcá-lo como completo</p>
+   </div>
+   <h1>Lista de Tarefas:</h1>
+   <div class="content">  
+      <ol type="1" id="lista-tarefas">
+      </ol>
+   </div>
+   <p class="foot">Personalize sua lista</p>  
+   <script src="script.js"></script>    
+   </body>
  </html>

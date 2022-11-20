@@ -1,7 +1,82 @@
-.item-selecionado {
-    background-color: grey;
+body {
+  margin: auto;
+  text-align: center;
+  background-color: rgb(55, 54, 54);
+  color: white;
+  background-size: 100%;
+  height: 1200px;
 }
- 
+
+.add {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 50px !important;
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+div {
+  font-family: 'Hina Mincho', serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.204);
+  width: 600px;
+  margin-left: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.foot, .personalize {
+  color: rgb(55, 54, 54);
+}
+
+ol {
+  cursor: pointer;
+  width: 600px;
+  text-align: start;
+}
+
+li {
+  color: white;
+  margin-left: 500px;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+button {
+  height: 25px !important;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.funcionamento {
+  color: white;
+  font-size: 22px;
+}
+
+.item-selecionado {
+  background-color: rgba(170, 167, 166, 0.422);
+  padding: 0;
+  width: 100%;
+  margin: auto;
+}
+
 .completed {
-    text-decoration: line-through;
+  text-decoration: line-through solid black;
 }
